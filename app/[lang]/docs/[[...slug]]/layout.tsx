@@ -20,7 +20,7 @@ export default async function Documents({
   return (
     <div className="flex items-start gap-14">
       <Sidebar documentsHashTbl={DocumentsHashTbl} />
-      <div className="flex-1 md:flex-[6]">{children}</div>
+      <div className="flex-1 px-4 md:flex-[6] md:px-0">{children}</div>
     </div>
   )
 }

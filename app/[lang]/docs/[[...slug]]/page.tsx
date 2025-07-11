@@ -43,7 +43,7 @@ export default async function Pages({ params }: PageProps) {
 
   return (
     <div className="flex items-start gap-14">
-      <section className="flex-[3] pt-10">
+      <section className="flex-[3] pt-6 md:pt-10">
         <PageBreadcrumb
           titles={getBreadcrumbTitles(document, documentJson[lang as Locales])}
           paths={slug}

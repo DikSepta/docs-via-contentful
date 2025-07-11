@@ -32,13 +32,20 @@ export default function LanguageSelector() {
 
   return (
     <Select value={locale as Locales} onValueChange={handleSelectLanguage}>
-      <SelectTrigger className="bg-background w-[140px] cursor-pointer">
+      <SelectTrigger
+        className="bg-background w-10 cursor-pointer md:w-[140px]"
+        iconClassName="hidden md:block"
+      >
         <div className="flex items-center gap-2">
           <LuGlobe className="text-foreground size-4" />
-          <SelectValue placeholder="Language" />
+          <SelectValue placeholder="Language" asChild>
+            <span data-slot="select-value" className="hidden md:block">
+              {languageNames[locale as Locales]}
+            </span>
+          </SelectValue>
         </div>
       </SelectTrigger>
-      <SelectContent>
+      <SelectContent position="popper" align="end">
         {locales.map((lang) => (
           <SelectItem key={lang} value={lang} className="cursor-pointer">
             {languageNames[lang]}

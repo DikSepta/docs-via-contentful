@@ -152,7 +152,7 @@ export default function Search() {
               </div>
             </ScrollArea>
           ) : (
-            <p className="text-muted-foreground mx-auto mt-2 mb-8 text-sm">
+            <p className="text-muted-foreground mx-auto mt-2 mb-8 text-center text-sm">
               {LL.search_start_typing()}
             </p>
           )}

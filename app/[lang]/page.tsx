@@ -13,7 +13,7 @@ export default async function Home({
   const LL = useI18n(lang as Locales)
 
   return (
-    <section className="flex min-h-[86.5vh] max-w-2/3 flex-col px-16 py-16 sm:max-w-1/2 sm:px-24">
+    <section className="flex min-h-[86.5vh] flex-col px-8 py-16 sm:px-24 md:max-w-1/2 md:px-16">
       <h5 className="text-muted-foreground mb-4 text-xl font-semibold">
         {LL.documentation()}
       </h5>
