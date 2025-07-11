@@ -1,5 +1,12 @@
 {
   "en-US": {
+    "GCUIpSPED0rgaFsQ27ess": {
+      "id": "GCUIpSPED0rgaFsQ27ess",
+      "title": "test",
+      "slug": "tessss",
+      "menu_order": 1,
+      "content": "TEST"
+    },
     "5FbdnhmnuGggPtfSivls4Z": {
       "id": "5FbdnhmnuGggPtfSivls4Z",
       "title": "Configuration",
@@ -25,6 +32,13 @@
     }
   },
   "ja": {
+    "GCUIpSPED0rgaFsQ27ess": {
+      "id": "GCUIpSPED0rgaFsQ27ess",
+      "title": "test",
+      "slug": "tessss",
+      "menu_order": 1,
+      "content": "TEST"
+    },
     "5FbdnhmnuGggPtfSivls4Z": {
       "id": "5FbdnhmnuGggPtfSivls4Z",
       "title": "構成",

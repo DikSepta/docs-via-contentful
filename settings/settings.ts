@@ -1,8 +1,8 @@
-export const url = "https://rubix-documents.vercel.app"
+export const url = "https://docs-contentful-lac.vercel.app"
 export const siteicon = "/icon.png"
 
 export const gtm = "GTM-XXXXXXX"
-export const gtmconnected = true
+export const gtmconnected = false
 
 export const sitename = "Documents"
 export const description =
@@ -10,12 +10,12 @@ export const description =
 export const keywords = [
   "Next.js",
   "documentation",
-  "Rubix Studios",
+  "Cyber Matrix Co",
   "open source",
   "SEO",
 ]
 export const urlimage = "/images/og-image.png"
-export const imagealt = "Rubix Studios Documentation"
+export const imagealt = "Cyber Matrix Co Documentation"
 export const twitterhandle = "@RubixStudios"
 
 export const companyname = "Cyber Matrix Co"

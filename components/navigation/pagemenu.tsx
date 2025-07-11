@@ -24,7 +24,7 @@ export default function PageMenu({
   )
 
   return (
-    <div className="mt-5 flex flex-col gap-3.5 pb-6">
+    <div className="mt-5 flex flex-col pb-6">
       {documents.map((item, index) => {
         if ("spacer" in item) {
           return (

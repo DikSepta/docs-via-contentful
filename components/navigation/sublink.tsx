@@ -41,8 +41,6 @@ export default function SubLink(
     }
   }, [path, props])
 
-  console.log("SubLink props", props)
-
   if (!isRoute(props)) {
     return null
   }
@@ -69,9 +67,6 @@ export default function SubLink(
     <h2 className="text-primary font-medium sm:text-sm">{title}</h2>
   )
 
-  console.log("subLink", title, {
-    childs,
-  })
   if (!childs || childs.length === 0) {
     return (
       <div className="hover:bg-accent hover:text-accent-foreground flex w-full flex-col rounded-md px-3 py-2 text-sm">

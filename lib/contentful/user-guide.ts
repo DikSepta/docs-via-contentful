@@ -73,7 +73,6 @@ export function convertToDocumentWithChilds(
   DocumentHashTbl: DocumentsHashTbl
 ): Record<string, DocumentWithChilds> {
   const result: Record<string, DocumentWithChilds> = {}
-  console.log("convertToDocumentWithChilds", DocumentHashTbl)
 
   // First, initialize the result with all guides and empty childDocId arrays
   for (const [id, guide] of Object.entries(DocumentHashTbl)) {
@@ -140,7 +139,6 @@ export function extractText(content: any[]): string {
 }
 
 export function getTocFromDocumentContent(content: any): TOCItem[] {
-  console.log("getTocFromDocumentContent", content)
   const toc: TOCItem[] = []
 
   function walk(nodes: any[]) {

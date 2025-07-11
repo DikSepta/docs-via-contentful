@@ -17,6 +17,8 @@ const translations = {
     search_no_results: "No results found for {query}",
     search_loading: "Loading results for {query}",
     search_character_limit: "Please enter at least 3 characters.",
+    on_this_page: "On this page",
+    scroll_to_top: "Scroll to top",
   },
   ja: {
     documentation: "ドキュメント",
@@ -30,6 +32,8 @@ const translations = {
     search_no_results: "{query}の結果は見つかりません",
     search_loading: "{query}の結果の読み込み結果",
     search_character_limit: "少なくとも3文字を入力してください。",
+    on_this_page: "目次",
+    scroll_to_top: "先頭にスクロール",
   },
 } as const
 

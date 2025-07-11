@@ -41,11 +41,6 @@ export default async function Pages({ params }: PageProps) {
     menu_order: items[0].menu_order,
   }
 
-  console.log("TOC content", {
-    toc: getTocFromDocumentContent(document.content),
-    documentContent: document.content,
-  })
-
   return (
     <div className="flex items-start gap-14">
       <section className="flex-[3] pt-10">
@@ -131,7 +126,6 @@ export async function generateStaticParams() {
       }
     })
   )
-  console.log("allParams", allParams.flat())
 
   return allParams.flat()
 }

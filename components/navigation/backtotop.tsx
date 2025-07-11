@@ -2,6 +2,8 @@
 
 import type { ReactElement } from "react"
 import { useEffect, useRef } from "react"
+import { useI18n } from "@/i18n"
+import { useLocalePathname } from "@/i18n/navigation"
 import cn from "clsx"
 import { LuArrowUp } from "react-icons/lu"
 
@@ -13,6 +15,8 @@ function ScrollUp() {
 
 export function BackToTop({ className }: { className?: string }): ReactElement {
   const ref = useRef<HTMLButtonElement>(null)
+  const { locale } = useLocalePathname()
+  const LL = useI18n(locale)
 
   useEffect(() => {
     function toggleVisible() {
@@ -38,7 +42,7 @@ export function BackToTop({ className }: { className?: string }): ReactElement {
       )}
     >
       <LuArrowUp className="mr-1 inline-block h-4 w-4 align-middle" />
-      <span>Scroll to top</span>
+      <span>{LL.scroll_to_top()}</span>
     </button>
   )
 }
